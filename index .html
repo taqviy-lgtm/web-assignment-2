@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - Syeda Muqaddas Rizwan</title>
+
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Segoe UI', sans-serif;
+    }
+
+    body{
+      background:linear-gradient(135deg,#1f4037,#99f2c8);
+      color:#fff;
+    }
+
+    /* HEADER */
+    header{
+      background:#0f172a;
+      padding:15px;
+      text-align:center;
+      position:sticky;
+      top:0;
+    }
+
+    header h1{
+      margin-bottom:10px;
+      font-size:26px;
+    }
+
+    nav a{
+      text-decoration:none;
+      color:#fff;
+      margin:5px;
+      padding:8px 15px;
+      border:2px solid #38bdf8;
+      border-radius:20px;
+      transition:0.3s;
+      display:inline-block;
+    }
+
+    nav a:hover{
+      background:#38bdf8;
+      color:#000;
+    }
+
+    /* HERO */
+    .hero{
+      display:flex;
+      justify-content:space-around;
+      align-items:center;
+      flex-wrap:wrap;
+      padding:70px 20px;
+      min-height:90vh;
+    }
+
+    .hero img{
+      width:300px;
+      border-radius:50%;
+      border:5px solid white;
+    }
+
+    .hero-text{
+      max-width:500px;
+    }
+
+    /* SECTIONS */
+    section{
+      padding:50px 20px;
+    }
+
+    h2{
+      margin-bottom:15px;
+      color:#0f172a;
+      background:white;
+      display:inline-block;
+      padding:5px 15px;
+      border-radius:10px;
+    }
+
+    ul,ol{
+      margin-left:25px;
+      margin-top:10px;
+    }
+
+    /* TABLE */
+    table{
+      width:100%;
+      margin-top:20px;
+      border-collapse:collapse;
+      background:#fff;
+      color:#000;
+    }
+
+    table th{
+      background:#0f172a;
+      color:#fff;
+      padding:10px;
+    }
+
+    table td{
+      border:1px solid #ddd;
+      padding:10px;
+      text-align:center;
+    }
+
+    /* MEDIA */
+    .media{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:20px;
+    }
+
+    img,iframe{
+      width:100%;
+      border-radius:10px;
+    }
+
+    iframe{
+      height:220px;
+    }
+
+    /* CONTACT */
+    .contact{
+      background:#0f172a;
+      padding:30px;
+      border-radius:15px;
+      max-width:700px;
+      margin:auto;
+    }
+
+    .contact p{
+      margin:8px 0;
+    }
+
+    footer{
+      text-align:center;
+      padding:20px;
+      background:#0f172a;
+      margin-top:30px;
+    }
+
+    @media(max-width:768px){
+      .hero{
+        flex-direction:column;
+        text-align:center;
+      }
+
+      .media{
+        grid-template-columns:1fr;
+      }
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<header>
+  <h1>Syeda Muqaddas Rizwan Portfolio</h1>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#media">Media</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- HOME -->
+<section class="hero" id="home">
+
+  <div class="hero-text">
+    <h2>Welcome!</h2>
+    <p>
+      I am Syeda Muqaddas Rizwan, a Computer Science student.
+      I enjoy learning web development and building creative websites.
+    </p>
+  </div>
+
+  <img src="https://picsum.photos/300/300" alt="Profile">
+
+</section>
+
+<!-- HOBBIES -->
+<section id="hobbies">
+
+  <h2>Hobbies</h2>
+
+  <ul>
+    <li>Reading</li>
+    <li>Coding</li>
+    <li>Traveling</li>
+    <li>Designing</li>
+  </ul>
+
+  <ol>
+    <li>Cricket</li>
+    <li>Football</li>
+    <li>Free Fire</li>
+    <li>PUBG</li>
+  </ol>
+
+  <h2>Hobby Table</h2>
+
+  <table>
+    <tr>
+      <th>Hobby</th>
+      <th>Time</th>
+    </tr>
+    <tr>
+      <td>Coding</td>
+      <td>3 Hours</td>
+    </tr>
+    <tr>
+      <td>Reading</td>
+      <td>1 Hour</td>
+    </tr>
+  </table>
+
+</section>
+
+<!-- MEDIA -->
+<section id="media">
+
+  <h2>Media Section</h2>
+
+  <div class="media">
+
+    <div>
+      <img src="https://picsum.photos/400/300?1">
+      <img src="https://picsum.photos/400/300?2">
+    </div>
+
+    <div>
+      <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+      <iframe src="https://www.youtube.com/embed/kXYiU_JCYtU"></iframe>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+
+  <h2>Contact</h2>
+
+  <div class="contact">
+
+    <p><strong>Name:</strong> Syeda Muqaddas Rizwan</p>
+    <p><strong>ID:</strong> 37508</p>
+    <p><strong>Location:</strong> Sargodha</p>
+    <p><strong>Email:</strong> muqaddasrizwan@gmail.com</p>
+    <p><strong>Phone:</strong> 0300-0000000</p>
+
+    <iframe src="https://www.google.com/maps?q=Sargodha&output=embed"></iframe>
+
+  </div>
+
+</section>
+
+<footer>
+  © 2026 Syeda Muqaddas Rizwan | All Rights Reserved
+</footer>
+
+</body>
+</html>
